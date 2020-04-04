@@ -9,15 +9,14 @@ Start installing the shell and the dependencies:
         mkdir -p "$HOME/.zsh"
 
         # use this basic zsh configuration file
-        wget https://github.com/ChrisTitusTech/zsh/raw/master/.zshrc -O ~/.zshrc
+        wget https://raw.githubusercontent.com/rigtsm/terminal/master/zsh/.zshrc -O ~/.zshrc
 
         # custom alias
-        wget https://github.com/ChrisTitusTech/zsh/raw/master/.zsh/aliasrc -O ~/.zsh/aliasrc
+        wget https://raw.githubusercontent.com/rigtsm/terminal/master/zsh/.zsh/aliasrc -O ~/.zsh/aliasrc
 
         # use the "pure" minimalist the theme
         git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
-        # we can change the colors of the theme
 
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - syntax highlighting for ZSH in standard repos
@@ -27,6 +26,8 @@ Start installing the shell and the dependencies:
 
         # if missing in .zshrc file then:        
         echo "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+        
+        source .zshrc
 
 
 - [autojump](https://github.com/wting/autojump) - jump to directories with j or jc for child or jo to open in file manager
@@ -49,7 +50,7 @@ Start installing the shell and the dependencies:
         source .zshrc
 
 
-- Add apt repository suggestion:
+- Add apt-install-repository suggestions:
 
         echo "source /etc/zsh_command_not_found" >> ${ZDOTDIR:-$HOME}/.zshrc
 
