@@ -42,15 +42,18 @@ Start installing the shell and the dependencies:
 
         # on ~/.zsh
         git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-        
+
         # if missing in .zshrc file, then add:
         echo "source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
         source .zshrc
 
+
+- Add apt repository suggestion:
+
+        echo "source /etc/zsh_command_not_found" >> ${ZDOTDIR:-$HOME}/.zshrc
+
 ## Make zsh the default shell
-    
+
     # edit the user default shell on
     sudo nano /etc/passwd
-
-
