@@ -18,6 +18,17 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
+# black, red, green, yellow, blue, magenta, cyan, white, default
+# change the path color
+zstyle :prompt:pure:path color cyan
+
+zstyle :prompt:pure:prompt:success color green
+
+zstyle :prompt:pure:git:stash show yes
+
+
+
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -46,4 +57,3 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 source /home/rig/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
