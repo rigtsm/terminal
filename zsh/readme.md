@@ -25,7 +25,7 @@ Start installing the shell and the dependencies:
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
         # if missing in .zshrc file then:        
-        echo "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+        echo "source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
         
         source .zshrc
 
