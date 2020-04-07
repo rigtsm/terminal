@@ -56,5 +56,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
-source /home/rig/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /etc/zsh_command_not_found
